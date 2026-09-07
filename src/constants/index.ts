@@ -58,26 +58,26 @@ export const NAV_LINKS = [
   {
     id: "source-code",
     title: "Source Code",
-    link: "http://www.github.com/sanidhyy/3d-portfolio",
+    link: "https://github.com/MHuzaifaAsif/3D-Portfolio",
   },
 ] as const;
 
 // Services
 export const SERVICES = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frontend Specialist",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Backend & API Engineer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "QA & Automation Engineer",
     icon: creator,
   },
 ] as const;
@@ -141,55 +141,51 @@ export const TECHNOLOGIES = [
 // Experiences
 export const EXPERIENCES = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "QA Intern",
+    company_name: "Paklogics",
     icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    iconBg: "#1f2937",
+    date: "June 2026 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Executed manual UI, functional, and cross-browser testing on Oritto (O/A Level learning platform), covering Dashboard, Study Hub, and Exam Simulator modules.",
+      "Conducted cross-browser (Chrome, Edge, Safari) and cross-device testing using Chrome DevTools, validating navigation, form interactions, session persistence, and error handling.",
+      "Ensured pixel-perfect UI rendering, responsive ergonomics, and accurate app behavior across modern device viewports.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "MERN Stack Intern",
+    company_name: "Developers Hub",
     icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    iconBg: "#111827",
+    date: "Nov 2025 - Jan 2026",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and deployed full-stack features for web applications using React, Node.js, and MongoDB, contributing to production-ready code.",
+      "Built REST APIs with Express.js, created modular React components for responsive user interfaces, and designed MongoDB database schemas for efficient data storage.",
+      "Collaborated with senior engineers to implement authentication systems (JWT), form validation, and robust error handling across multiple client projects.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Web Developer Intern",
+    company_name: "UWORX",
     icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    iconBg: "#1f2937",
+    date: "June 2025 - Aug 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and maintained backend APIs using Express.js and Node.js for high-performance web applications.",
+      "Created reusable middleware functions for authentication, data validation, and error handling to streamline backend workflows.",
+      "Designed efficient database schemas with MongoDB, optimized query performance, and validated backend endpoints and status codes.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Software Engineering Student & Researcher",
+    company_name: "FAST NUCES",
     icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    iconBg: "#111827",
+    date: "2022 - 2026",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Pursuing Bachelor of Software Engineering (BSSE), mastering distributed systems, algorithms, SDLC/STLC, and full-stack software architecture.",
+      "Published research paper in IEEE Xplore: 'Quran ILM: An Empirical Study of LLM and RAG Architectures for Quranic Question Answering'.",
+      "Actively building production-grade projects and automation test suites integrating modern DevOps and CI/CD pipelines.",
     ],
   },
 ] as const;
@@ -198,26 +194,26 @@ export const EXPERIENCES = [
 export const TESTIMONIALS = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "Huzaifa demonstrated exceptional full-stack skills, delivering reliable APIs and clean, responsive frontend interfaces ahead of schedule.",
+    name: "Engineering Lead",
+    designation: "Tech Lead",
+    company: "Developers Hub",
     image: user1,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "Working with Huzaifa was fantastic. His attention to code quality, testing rigor, and seamless user experiences made an immediate impact.",
+    name: "Senior Developer",
+    designation: "Backend Lead",
+    company: "UWORX",
     image: user2,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "Huzaifa possesses both strong full-stack software craftsmanship and deep research acumen. A dedicated, proactive software engineer.",
+    name: "Project Advisor",
+    designation: "Faculty Mentor",
+    company: "FAST NUCES",
     image: user3,
   },
 ] as const;
@@ -225,78 +221,12 @@ export const TESTIMONIALS = [
 // Projects
 export const PROJECTS = [
   {
-    name: "Disney+ Clone",
+    name: "SkillSwap",
     description:
-      "Disney+ is one of the biggest streaming platforms used by millions of people world-wide and allows us to stream high quality content in 4k and various other formats",
+      "A real-time freelance marketplace featuring Socket.io bidding and live chatting, engineered with secure JWT authentication, role-based dashboards, and admin credential verification.",
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project1,
-    source_code_link: "https://github.com/sanidhyy/disney-clone",
-    live_site_link: "https://clonedisneyplus.web.app",
-  },
-  {
-    name: "Golds Gym",
-    description:
-      "Web application that enables users to search for fitness exercises, effective personalized positions, and recommends new exercises based on their personal preferences.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rapidapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project2,
-    source_code_link: "https://github.com/sanidhyy/fitness-app",
-    live_site_link: "https://fitness-gym-react.netlify.app",
-  },
-  {
-    name: "Shoppy",
-    description:
-      "The most personalised admin dashboard web application that allows enables users to choose customized themes and dark mode with different pages and variety of charts.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "syncfusion",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project3,
-    source_code_link: "https://github.com/sanidhyy/admin-dashboard",
-    live_site_link: "https://shoppy-dashboard-react.netlify.app",
-  },
-  {
-    name: "TikTok Clone",
-    description:
-      "A Next JS Web Application that enables users to upload videos of any length and size, create accounts and connect with other people just like any other social media.",
-    tags: [
-      {
-        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
@@ -304,79 +234,169 @@ export const PROJECTS = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "mongodb",
         color: "pink-text-gradient",
+      },
+      {
+        name: "socketio",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: project1,
+    source_code_link: "https://github.com",
+    live_site_link: "https://github.com",
+  },
+  {
+    name: "E-Commerce Platform",
+    description:
+      "Full-stack shopping platform with secure JWT authentication and OTP email verification, featuring interactive carts, wishlists, product reviews, and custom admin management dashboards.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: project2,
+    source_code_link: "https://github.com",
+    live_site_link: "https://github.com",
+  },
+  {
+    name: "EduConnect E-Learning",
+    description:
+      "Role-based tutoring platform enabling search, scheduling, and session booking between students and verified tutors, featuring Recharts analytics and containerized deployment.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "kubernetes",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: project3,
+    source_code_link: "https://github.com",
+    live_site_link: "https://github.com",
+  },
+  {
+    name: "Quran ILM RAG Assistant",
+    description:
+      "Scholar RAG chatbot and automated LLM-as-a-Judge semantic evaluation suite to validate grounding, relevance, guardrails, and tone with zero-cost fallback mocking. Published on IEEE Xplore.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "streamlit",
+        color: "green-text-gradient",
+      },
+      {
+        name: "gemini-api",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "blue-text-gradient",
       },
     ],
     image: project4,
-    source_code_link: "https://github.com/sanidhyy/tiktok-clone",
-    live_site_link: "https://tiktok-clone-react.vercel.app",
+    source_code_link: "https://ieeexplore.ieee.org/document/11577717",
+    live_site_link: "https://ieeexplore.ieee.org/document/11577717",
   },
   {
-    name: "Cryptoverse",
+    name: "Course Registration System",
     description:
-      "Best Cryptocurrency web application that allows users to view price, market cap and daily change in realtime for almost every cryptocurrency in the world.",
+      "Backend engine with JWT authentication managing student enrollments, administrative actions, real-time seat tracking, scheduling conflict detection, and academic prerequisite verification.",
     tags: [
       {
-        name: "react",
+        name: "nodejs",
         color: "blue-text-gradient",
       },
       {
-        name: "rapidapi",
+        name: "express",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "mongodb",
         color: "pink-text-gradient",
+      },
+      {
+        name: "jwt",
+        color: "blue-text-gradient",
       },
     ],
     image: project5,
-    source_code_link: "https://github.com/sanidhyy/crypto-app",
-    live_site_link: "https://reactjscryptoapp.netlify.app",
+    source_code_link: "https://github.com",
+    live_site_link: "https://github.com",
   },
   {
-    name: "Travel Advisor",
+    name: "Mobile Test Automation",
     description:
-      "Web application that enables you to view your nearby restaurants, hotels and attractions which can be sorted by ratings, price and much more.",
+      "Java-based Android UI test automation framework using Appium and Selenium Page Object Model (POM), integrated with GitHub Actions CI/CD for automated headless testing on PRs.",
     tags: [
       {
-        name: "react",
+        name: "appium",
         color: "blue-text-gradient",
       },
       {
-        name: "rapidapi",
+        name: "selenium",
         color: "green-text-gradient",
       },
       {
-        name: "material-ui",
+        name: "java",
         color: "pink-text-gradient",
+      },
+      {
+        name: "github-actions",
+        color: "blue-text-gradient",
       },
     ],
     image: project6,
-    source_code_link: "https://github.com/sanidhyy/travel-advisor",
-    live_site_link: "https://travel-advisor-reactjs.netlify.app",
+    source_code_link: "https://github.com",
+    live_site_link: "https://github.com",
   },
 ] as const;
 
 export const SOCIALS = [
   {
-    name: "YouTube",
-    icon: youtube,
-    link: "https://www.youtube.com",
+    name: "GitHub",
+    icon: github,
+    link: "https://github.com/MHuzaifaAsif",
   },
   {
     name: "Linkedin",
     icon: linkedin,
-    link: "https://www.linkedin.com/in/sanidhyy",
+    link: "https://linkedin.com",
   },
   {
     name: "Twitter",
     icon: twitter,
-    link: "https://x.com/_sanidhyy",
+    link: "https://x.com",
   },
   {
-    name: "GitHub",
-    icon: github,
-    link: "https://github.com/sanidhyy",
+    name: "YouTube",
+    icon: youtube,
+    link: "https://youtube.com",
   },
 ] as const;

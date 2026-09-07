@@ -257,14 +257,48 @@ export const Contact = () => {
           <p className={styles.sectionSubText}>Get in touch</p>
           <h3 className={styles.sectionHeadText}>Contact.</h3>
 
+          <div className="mt-3 flex flex-wrap items-center gap-x-6 gap-y-2 text-secondary text-sm">
+            <a
+              href="mailto:mhuzaifa.asif412@gmail.com"
+              className="flex items-center gap-1.5 hover:text-white transition"
+            >
+              <span className="text-[#915eff] font-semibold">Email:</span>
+              mhuzaifa.asif412@gmail.com
+            </a>
+            <span className="text-secondary/40 hidden sm:inline">•</span>
+            <a
+              href="tel:03220676858"
+              className="flex items-center gap-1.5 hover:text-white transition"
+            >
+              <span className="text-[#915eff] font-semibold">Phone:</span>
+              03220676858
+            </a>
+          </div>
+
           {siteKey ? (
             <GoogleReCaptchaProvider reCaptchaKey={siteKey}>
               <ContactForm />
             </GoogleReCaptchaProvider>
           ) : (
-            <p className="mt-12 text-secondary">
-              Contact form is currently unavailable.
-            </p>
+            <div className="mt-8 p-6 rounded-xl bg-tertiary/40 border border-secondary/10">
+              <p className="text-secondary text-base mb-5">
+                Have a project, opportunity, or inquiry? Feel free to reach out directly via email or phone!
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="mailto:mhuzaifa.asif412@gmail.com"
+                  className="bg-tertiary hover:bg-[#915eff] transition py-3 px-6 rounded-xl text-white font-bold shadow-md shadow-primary"
+                >
+                  Send an Email
+                </a>
+                <a
+                  href="tel:03220676858"
+                  className="bg-black-200 hover:bg-black-100 border border-secondary/20 transition py-3 px-6 rounded-xl text-white font-medium"
+                >
+                  Call 03220676858
+                </a>
+              </div>
+            </div>
           )}
         </motion.div>
 

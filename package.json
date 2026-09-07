@@ -41,43 +41,28 @@
     "vite": "^8.2.1"
   },
   "author": {
-    "name": "Sanidhya Kumar Verma",
-    "email": "sanidhyyy@gmail.com",
-    "url": "https://github.com/sanidhyy"
+    "name": "Muhammad Huzaifa",
+    "email": "mhuzaifa.asif412@gmail.com"
   },
-  "description": "Modern 3D Portfolio using React, Three.js and Typescript",
+  "description": "Muhammad Huzaifa - 3D Portfolio using React, Three.js and TypeScript",
   "keywords": [
     "reactjs",
     "react",
-    "porfolio-app",
+    "portfolio",
     "three-js",
-    "resend",
-    "netlify",
-    "modern-ui/ux",
-    "js",
+    "developer",
+    "full-stack",
     "javascript",
-    "html",
-    "css",
+    "typescript",
     "tailwindcss"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanidhyy/3d-portfolio.git"
+    "url": "https://github.com/MHuzaifaAsif/3D-Portfolio.git"
   },
-  "homepage": "https://github.com/sanidhyy/3d-portfolio#readme",
+  "homepage": "https://github.com/MHuzaifaAsif/3D-Portfolio#readme",
   "bugs": {
-    "url": "https://github.com/sanidhyy/3d-portfolio/issues",
-    "email": "sanidhyyy@gmail.com"
-  },
-  "funding": [
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/sanidhy"
-    },
-    {
-      "type": "Buy me a coffee",
-      "url": "https://www.buymeacoffee.com/sanidhy"
-    }
-  ]
+    "url": "https://github.com/MHuzaifaAsif/3D-Portfolio/issues"
+  }
 }

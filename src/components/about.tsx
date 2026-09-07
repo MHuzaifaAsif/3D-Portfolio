@@ -54,11 +54,12 @@ export const About = () => {
           variants={fadeIn(undefined, undefined, 0.1, 1)}
           className="empty-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I'm a skilled website developer with experience in TypeScript and
-          Javascript, and expertise in frameworks like React, Node.js, and
-          Three.js. I'm a quick learner and collaborate closely with clients to
-          create efficient, scalable, and user-friendly solutions that solve
-          real-world problems. Let's work together to bring your ideas to life!
+          I'm a passionate Full-Stack MERN Developer and Software Engineer with
+          proven experience building production-ready web applications using
+          React, Node.js, Express, and MongoDB. Proficient in crafting responsive
+          user interfaces, building secure REST APIs, real-time features with
+          Socket.io, and quality automation. I love writing clean, maintainable
+          code and delivering seamless, reliable user experiences.
         </motion.p>
 
         {/* Service Card */}
