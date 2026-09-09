@@ -27,11 +27,7 @@ import typescript from "./tech/typescript.png";
 
 import devhub from "./company/devhub.png";
 import fast from "./company/fast.png";
-import meta from "./company/meta.png";
 import paklogics from "./company/paklogics.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import uworx from "./company/uworx.png";
 
 import project1 from "./projects/project1.png";
@@ -43,8 +39,6 @@ import project6 from "./projects/project6.png";
 
 import github from "./socials/github.svg";
 import linkedin from "./socials/linkedin.svg";
-import twitter from "./socials/twitter.svg";
-import youtube from "./socials/youtube.svg";
 import heroVideo from "./Man_posing_with_studio_lighting_202609072323.mp4";
 
 import avatar from "./avatar.png";
@@ -78,11 +72,7 @@ export {
   threejs,
   devhub,
   fast,
-  meta,
   paklogics,
-  shopify,
-  starbucks,
-  tesla,
   uworx,
   project1,
   project2,
@@ -91,9 +81,7 @@ export {
   project5,
   project6,
   github,
-  youtube,
   linkedin,
-  twitter,
   heroVideo,
   fastLogo,
   gmgcLogo,
