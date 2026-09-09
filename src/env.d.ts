@@ -8,6 +8,11 @@ interface ImportMeta {
   readonly env: ImportMetaEnv;
 }
 
+declare module "*.mp4" {
+  const src: string;
+  export default src;
+}
+
 declare namespace NodeJS {
   interface ProcessEnv {
     RESEND_API_KEY?: string;

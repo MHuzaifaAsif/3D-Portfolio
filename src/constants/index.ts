@@ -17,25 +17,29 @@ import {
   mongodb,
   git,
   figma,
+  devhub,
   docker,
+  fast,
   meta,
+  paklogics,
   starbucks,
   tesla,
   shopify,
   threejs,
+  uworx,
   project1,
   project2,
   project3,
   project4,
   project5,
   project6,
-  user1,
-  user2,
-  user3,
   youtube,
   linkedin,
   twitter,
   github,
+  fastLogo,
+  gmgcLogo,
+  scLogo,
 } from "../assets";
 
 // Navbar Links
@@ -46,8 +50,18 @@ export const NAV_LINKS = [
     link: null,
   },
   {
-    id: "work",
-    title: "Work",
+    id: "experience",
+    title: "Experience",
+    link: null,
+  },
+  {
+    id: "education",
+    title: "Education",
+    link: null,
+  },
+  {
+    id: "projects",
+    title: "Projects",
     link: null,
   },
   {
@@ -55,30 +69,63 @@ export const NAV_LINKS = [
     title: "Contact",
     link: null,
   },
-  {
-    id: "source-code",
-    title: "Source Code",
-    link: "https://github.com/MHuzaifaAsif/3D-Portfolio",
-  },
 ] as const;
 
 // Services
 export const SERVICES = [
   {
-    title: "Full-Stack Developer",
+    title: "Full Stack Developer",
     icon: web,
+    skills: [
+      {
+        category: "Frontend",
+        items: "React.js, Redux Toolkit, Tailwind CSS, Socket.io, Responsive Design",
+      },
+      {
+        category: "Backend",
+        items: "Node.js, Express.js, REST APIs, FastAPI, LangChain, JWT, OAuth",
+      },
+      {
+        category: "Database",
+        items: "MongoDB, SQL, Supabase",
+      },
+    ],
   },
   {
-    title: "Frontend Specialist",
+    title: "Manual QA",
     icon: mobile,
+    skills: [
+      {
+        category: "Manual Testing",
+        items: "Functional, UI/Regression, Cross-Browser, Test Planning, Defect Tracking",
+      },
+      {
+        category: "QA Tools",
+        items: "Jira, Postman, Chrome DevTools",
+      },
+      {
+        category: "Methodologies",
+        items: "SDLC/STLC, Agile/Scrum, Test Case Design, RBAC",
+      },
+    ],
   },
   {
-    title: "Backend & API Engineer",
-    icon: backend,
-  },
-  {
-    title: "QA & Automation Engineer",
+    title: "Automation QA",
     icon: creator,
+    skills: [
+      {
+        category: "Test Automation",
+        items: "Selenium, Playwright, Appium, REST Assured, Cypress, Pytest",
+      },
+      {
+        category: "AI & LLM Testing",
+        items: "LLM Testing, LLM-as-a-Judge Evaluation",
+      },
+      {
+        category: "CI/CD & Languages",
+        items: "GitHub Actions, CI/CD, Docker, Python, Java",
+      },
+    ],
   },
 ] as const;
 
@@ -143,78 +190,104 @@ export const EXPERIENCES = [
   {
     title: "QA Intern",
     company_name: "Paklogics",
-    icon: starbucks,
-    iconBg: "#1f2937",
+    icon: paklogics,
+    iconBg: "#16202c",
     date: "June 2026 - Present",
+    summary:
+      "Developed and executed comprehensive quality assurance strategies for Oritto, a critical O/A Level learning platform. Successfully validated user interfaces and platform features across a multi-million-user ecosystem.",
     points: [
-      "Executed manual UI, functional, and cross-browser testing on Oritto (O/A Level learning platform), covering Dashboard, Study Hub, and Exam Simulator modules.",
-      "Conducted cross-browser (Chrome, Edge, Safari) and cross-device testing using Chrome DevTools, validating navigation, form interactions, session persistence, and error handling.",
-      "Ensured pixel-perfect UI rendering, responsive ergonomics, and accurate app behavior across modern device viewports.",
+      "CROSS-BROWSER & DEVICE EXCELLENCE: Led manual and automated testing, ensuring a seamless user experience across multiple device viewports and browsers (Chrome, Edge, Safari).",
+      "PLATFORM INTEGRITY: Rigorously validated key application modules, including the Dashboard, Study Hub, and Exam Simulator, to ensure robust error handling and pixel-perfect rendering.",
+      "PERFORMANCE VALIDATION: Validated navigation, complex form interactions, session persistence, and API integrations using Chrome DevTools.",
+      "UI ERGONOMICS: Verified responsive design and user-centric ergonomics for a consistently high-quality experience on all screens.",
     ],
   },
   {
     title: "MERN Stack Intern",
     company_name: "Developers Hub",
-    icon: tesla,
-    iconBg: "#111827",
+    icon: devhub,
+    iconBg: "#050816",
     date: "Nov 2025 - Jan 2026",
+    summary:
+      "Developed and deployed full-stack features using React, Node.js, and MongoDB, contributing to production-ready code. Built REST APIs with Express.js and designed database schemas.",
     points: [
-      "Developed and deployed full-stack features for web applications using React, Node.js, and MongoDB, contributing to production-ready code.",
-      "Built REST APIs with Express.js, created modular React components for responsive user interfaces, and designed MongoDB database schemas for efficient data storage.",
-      "Collaborated with senior engineers to implement authentication systems (JWT), form validation, and robust error handling across multiple client projects.",
+      "FULL-STACK INTEGRATION: Implemented comprehensive features across the whole stack using the MERN ecosystem.",
+      "REST API & DATA: Created robust REST APIs with Express.js and designed efficient MongoDB database schemas.",
+      "CLIENT INTERFACES: Created modular React components for responsive user interfaces and robust front-ends.",
+      "AUTHENTICATION & SECURITY: Collaborated with senior engineers to implement authentication systems (JWT) and security protocols.",
     ],
   },
   {
-    title: "Web Developer Intern",
+    title: "QA Intern",
     company_name: "UWORX",
-    icon: shopify,
-    iconBg: "#1f2937",
+    icon: uworx,
+    iconBg: "#ffffff",
     date: "June 2025 - Aug 2025",
+    summary:
+      "Designed and executed comprehensive manual and automated test cases (Selenium). Effectively managed bugs using Jira and collaborated with developers for quality improvement.",
     points: [
-      "Developed and maintained backend APIs using Express.js and Node.js for high-performance web applications.",
-      "Created reusable middleware functions for authentication, data validation, and error handling to streamline backend workflows.",
-      "Designed efficient database schemas with MongoDB, optimized query performance, and validated backend endpoints and status codes.",
+      "TEST STRATEGY & EXECUTION: Led manual test case design and execution (functional, UI, regression), ensuring a high-quality product.",
+      "BUG MANAGEMENT: Utilized Jira to track, document, and manage bugs, collaborating with developers to verify fixes and improve product stability.",
+      "AUTOMATION & PLANNING: Built automated test scripts with Selenium and provided QA insights during sprint planning to optimize testing processes.",
     ],
   },
   {
-    title: "Software Engineering Student & Researcher",
+    title: "Researcher & President FCAP",
     company_name: "FAST NUCES",
-    icon: meta,
-    iconBg: "#111827",
+    icon: fast,
+    iconBg: "#ffffff",
     date: "2022 - 2026",
+    roles: [
+      {
+        role: "Researcher",
+        points: [
+          "Contributed as co-author to IEEE-published research on advanced LLM and RAG architectures for Quranic Question Answering.",
+        ],
+        paperLink: {
+          text: "View Publication",
+          url: "https://ieeexplore.ieee.org/document/11577717",
+        },
+      },
+      {
+        role: "President FCAP",
+        subtitle: "FAST Club of App Development & Programming",
+        points: [
+          "Led the execution of high-impact technical events, ensuring seamless coordination across departments.",
+          "Managed team positions and logistics to enhance operational efficiency and event delivery.",
+          "Developed innovative event proposals and project timelines to boost society outreach.",
+        ],
+        skills: ["Leadership and Public Speaking"],
+      },
+    ],
     points: [
-      "Pursuing Bachelor of Software Engineering (BSSE), mastering distributed systems, algorithms, SDLC/STLC, and full-stack software architecture.",
-      "Published research paper in IEEE Xplore: 'Quran ILM: An Empirical Study of LLM and RAG Architectures for Quranic Question Answering'.",
-      "Actively building production-grade projects and automation test suites integrating modern DevOps and CI/CD pipelines.",
+      "Contributed as co-author to IEEE-published research on advanced LLM and RAG architectures for Quranic Question Answering.",
+      "President FCAP (FAST Club of App Development & Programming): Led execution of high-impact technical events and managed operational efficiency.",
     ],
   },
 ] as const;
 
-// Testimonials
-export const TESTIMONIALS = [
+// Education
+export const EDUCATION = [
   {
-    testimonial:
-      "Huzaifa demonstrated exceptional full-stack skills, delivering reliable APIs and clean, responsive frontend interfaces ahead of schedule.",
-    name: "Engineering Lead",
-    designation: "Tech Lead",
-    company: "Developers Hub",
-    image: user1,
+    degree: "Bachelor of Science in Software Engineering",
+    institution: "FAST NUCES",
+    date: "2022 – 2026",
+    logo: fastLogo,
+    logoAlt: "FAST NUCES Logo",
   },
   {
-    testimonial:
-      "Working with Huzaifa was fantastic. His attention to code quality, testing rigor, and seamless user experiences made an immediate impact.",
-    name: "Senior Developer",
-    designation: "Backend Lead",
-    company: "UWORX",
-    image: user2,
+    degree: "Intermediate – Pre-Engineering",
+    institution: "Govt Municipal Graduate College",
+    date: "2020 – 2022",
+    logo: gmgcLogo,
+    logoAlt: "Govt Municipal Graduate College Logo",
   },
   {
-    testimonial:
-      "Huzaifa possesses both strong full-stack software craftsmanship and deep research acumen. A dedicated, proactive software engineer.",
-    name: "Project Advisor",
-    designation: "Faculty Mentor",
-    company: "FAST NUCES",
-    image: user3,
+    degree: "Matriculation – Science",
+    institution: "Hira Public High School",
+    date: "2018 – 2020",
+    logo: scLogo,
+    logoAlt: "Hira Public High School Logo",
   },
 ] as const;
 
@@ -223,22 +296,34 @@ export const PROJECTS = [
   {
     name: "SkillSwap",
     description:
-      "A real-time freelance marketplace featuring Socket.io bidding and live chatting, engineered with secure JWT authentication, role-based dashboards, and admin credential verification.",
+      "A real-time freelance marketplace connecting clients with verified specialists to streamline dynamic project bidding, identity verification queues, and secure contract hiring. It powers instant WebSocket feeds, enables live bidirectional messaging, automates tailored proposal generation through artificial intelligence, and computes algorithmic skill alignment scores to optimize client engagements and workflow analytics.",
     tags: [
       {
-        name: "react",
+        name: "React 18",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "Node.js",
         color: "green-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "MongoDB",
         color: "pink-text-gradient",
       },
       {
-        name: "socketio",
+        name: "Socket.io",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux Toolkit",
         color: "blue-text-gradient",
       },
     ],
@@ -247,50 +332,78 @@ export const PROJECTS = [
     live_site_link: "https://github.com",
   },
   {
-    name: "E-Commerce Platform",
+    name: "Mobile Test Automation",
     description:
-      "Full-stack shopping platform with secure JWT authentication and OTP email verification, featuring interactive carts, wishlists, product reviews, and custom admin management dashboards.",
+      "Android test automation framework built with Java, Appium, and TestNG to validate native and hybrid mobile applications using the Page Object Model (POM) architecture. It automates end-to-end user checkout flows, executes granular functional testing across app navigation and state resets, and executes OWASP MASVS security audits covering SQLi/XSS fuzzing, input masking, and Logcat leakage checks.",
     tags: [
       {
-        name: "react",
+        name: "Java",
         color: "blue-text-gradient",
       },
       {
-        name: "redux",
+        name: "Appium",
         color: "green-text-gradient",
       },
       {
-        name: "express",
+        name: "TestNG",
         color: "pink-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "POM",
         color: "blue-text-gradient",
       },
+      {
+        name: "CI/CD",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Maven",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "OWASP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Logcat",
+        color: "blue-text-gradient",
+      }
     ],
-    image: project2,
+    image: project6,
     source_code_link: "https://github.com",
     live_site_link: "https://github.com",
   },
   {
     name: "EduConnect E-Learning",
     description:
-      "Role-based tutoring platform enabling search, scheduling, and session booking between students and verified tutors, featuring Recharts analytics and containerized deployment.",
+      "A full-featured academic tutoring platform connecting university students with verified educators to streamline dynamic course discovery, onboarding wizards, and interactive lesson scheduling. It tracks complete session lifecycles across roles, enables transparent feedback ratings, visualizes earnings, and manages credential verification to optimize educational engagement and administrative supervision.",
     tags: [
       {
-        name: "react",
+        name: "React 18",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "Node.js",
         color: "green-text-gradient",
       },
       {
-        name: "docker",
+        name: "Express",
         color: "pink-text-gradient",
       },
       {
-        name: "kubernetes",
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Recharts",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Vite",
         color: "blue-text-gradient",
       },
     ],
@@ -301,78 +414,106 @@ export const PROJECTS = [
   {
     name: "Quran ILM RAG Assistant",
     description:
-      "Scholar RAG chatbot and automated LLM-as-a-Judge semantic evaluation suite to validate grounding, relevance, guardrails, and tone with zero-cost fallback mocking. Published on IEEE Xplore.",
+      "An AI-powered Islamic chatbot built on a Retrieval-Augmented Generation (RAG) pipeline to deliver authentic, context-aware answers grounded in the Quran, Tafsir. It semantically searches scripture via vector embeddings, provides transparent reference citations, and retains conversational context. The platform also manage document ingestion, fine-tune LLM retrieval parameters, and monitor token usage.",
     tags: [
       {
-        name: "python",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "streamlit",
+        name: "Streamlit",
         color: "green-text-gradient",
       },
       {
-        name: "gemini-api",
+        name: "Gemini API",
         color: "pink-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "MongoDB Atlas",
         color: "blue-text-gradient",
       },
+      {
+        name: "Vector Embeddings",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GridFS",
+        color: "pink-text-gradient",
+      }
     ],
     image: project4,
     source_code_link: "https://ieeexplore.ieee.org/document/11577717",
     live_site_link: "https://ieeexplore.ieee.org/document/11577717",
   },
   {
-    name: "Course Registration System",
+    name: "REST API Automation",
     description:
-      "Backend engine with JWT authentication managing student enrollments, administrative actions, real-time seat tracking, scheduling conflict detection, and academic prerequisite verification.",
+      "Built REST API automation framework engineered in JavaScript and Cypress to validate OpenWeatherMap services across weather, forecast, air pollution, and geocoding endpoints. Leveraging the Page Object Model (POM) and data-driven fixtures, it automates schema validation. It actively hardens API reliability through negative boundary suites and security fuzzing—testing against SQLi, XSS vulnerabilities.",
     tags: [
       {
-        name: "nodejs",
+        name: "Cypress",
         color: "blue-text-gradient",
       },
       {
-        name: "express",
+        name: "JS (ES6+)",
         color: "green-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "REST API Automation",
         color: "pink-text-gradient",
       },
       {
-        name: "jwt",
+        name: "POM",
         color: "blue-text-gradient",
       },
+      {
+        name: "GitHub Actions",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Mochawesome",
+        color: "blue-text-gradient",
+      }
     ],
     image: project5,
     source_code_link: "https://github.com",
     live_site_link: "https://github.com",
   },
   {
-    name: "Mobile Test Automation",
+    name: "NYC Congestion Audit",
     description:
-      "Java-based Android UI test automation framework using Appium and Selenium Page Object Model (POM), integrated with GitHub Actions CI/CD for automated headless testing on PRs.",
+      "An interactive analytics command center auditing NYC TLC taxi rides to evaluate the real-world impact of NYC's Central Business District Tolling Program. It tracks toll compliance across boroughs, detects fraudulent \"ghost trips,\" models traffic flow from major transit hubs, and simulates policy pricing shifts to forecast city revenue and emission offsets.Provide  downloadable executive memo for TLC commissioners.",
     tags: [
       {
-        name: "appium",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "selenium",
+        name: "Dask",
         color: "green-text-gradient",
       },
       {
-        name: "java",
+        name: "Streamlit",
         color: "pink-text-gradient",
       },
       {
-        name: "github-actions",
+        name: "PyDeck",
         color: "blue-text-gradient",
       },
+      {
+        name: "Plotly",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Parquet",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Anomaly Detection",
+        color: "blue-text-gradient",
+      }
     ],
-    image: project6,
+    image: project2,
     source_code_link: "https://github.com",
     live_site_link: "https://github.com",
   },
@@ -387,7 +528,7 @@ export const SOCIALS = [
   {
     name: "Linkedin",
     icon: linkedin,
-    link: "https://linkedin.com",
+    link: "https://www.linkedin.com/in/muhammad-huzaifa-asif-120818274",
   },
   {
     name: "Twitter",

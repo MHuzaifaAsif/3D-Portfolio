@@ -25,10 +25,14 @@ import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import typescript from "./tech/typescript.png";
 
+import devhub from "./company/devhub.png";
+import fast from "./company/fast.png";
 import meta from "./company/meta.png";
+import paklogics from "./company/paklogics.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import uworx from "./company/uworx.png";
 
 import project1 from "./projects/project1.png";
 import project2 from "./projects/project2.png";
@@ -37,16 +41,19 @@ import project4 from "./projects/project4.png";
 import project5 from "./projects/project5.png";
 import project6 from "./projects/project6.png";
 
-import user1 from "./testimonials/user1.jpg";
-import user2 from "./testimonials/user2.jpg";
-import user3 from "./testimonials/user3.jpg";
-
 import github from "./socials/github.svg";
 import linkedin from "./socials/linkedin.svg";
 import twitter from "./socials/twitter.svg";
 import youtube from "./socials/youtube.svg";
+import heroVideo from "./Man_posing_with_studio_lighting_202609072323.mp4";
+
+import avatar from "./avatar.png";
+import fastLogo from "./education/fast.jpg";
+import gmgcLogo from "./education/GMGC.jpg";
+import scLogo from "./education/SC.jpg";
 
 export {
+  avatar,
   backend,
   bulb,
   close,
@@ -69,21 +76,26 @@ export {
   tailwind,
   typescript,
   threejs,
+  devhub,
+  fast,
   meta,
+  paklogics,
   shopify,
   starbucks,
   tesla,
+  uworx,
   project1,
   project2,
   project3,
   project4,
   project5,
   project6,
-  user1,
-  user2,
-  user3,
   github,
   youtube,
   linkedin,
   twitter,
+  heroVideo,
+  fastLogo,
+  gmgcLogo,
+  scLogo,
 };

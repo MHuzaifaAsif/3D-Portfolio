@@ -1,38 +1,21 @@
-import { Link } from "react-router-dom";
-
-import { SOCIALS } from "../constants";
 import { styles } from "../styles";
 import { cn } from "../utils/lib";
 
 // Footer
 const Footer = () => {
   return (
-    <nav
+    <footer
       className={cn(
         styles.paddingX,
-        "w-full flex items-center py-8 bg-primary border-t border-t-secondary/5"
+        "w-full flex items-center justify-center py-8 bg-[#050816]/75 backdrop-blur-md border-t border-t-white/10"
       )}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <p className="text-white text-md font-bold flex">
+      <div className="w-full flex justify-center items-center max-w-7xl mx-auto text-center">
+        <p className="text-white text-md font-bold">
           &copy; Muhammad Huzaifa {new Date().getFullYear()}. All rights reserved.
         </p>
-
-        {/* Nav Links (Desktop) */}
-        <ul className="list-none hidden flex-row sm:flex gap-10">
-          {SOCIALS.map((social) => (
-            <li
-              key={social.name}
-              className="text-secondary font-poppins font-medium cursor-pointer text-[16px] opacity-80 hover:opacity-100 transition"
-            >
-              <Link to={social.link} target="_blank" rel="noreferrer noopener">
-                <img src={social.icon} alt={social.name} className="h-6 w-6" />
-              </Link>
-            </li>
-          ))}
-        </ul>
       </div>
-    </nav>
+    </footer>
   );
 };
 

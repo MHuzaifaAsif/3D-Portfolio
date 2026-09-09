@@ -64,7 +64,7 @@ const ComputersCanvas = () => {
   return (
     <div
       ref={ref}
-      className="hero-computer-canvas absolute inset-0 z-0 pointer-events-none md:pointer-events-auto"
+      className="hero-computer-canvas absolute inset-0 z-[2] pointer-events-none md:pointer-events-auto"
     >
       {isInView && !contextLost && (
         <Canvas

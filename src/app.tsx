@@ -2,14 +2,14 @@ import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import {
   About,
+  BackgroundVideo,
   Contact,
+  Education,
   Experience,
-  Feedbacks,
   Hero,
   Navbar,
   Tech,
   Works,
-  StarsCanvas,
 } from "./components";
 import Banner from "./components/banner";
 import Footer from "./components/footer";
@@ -21,22 +21,22 @@ const App = () => {
   return (
     <BrowserRouter>
       <Banner hide={hide} setHide={setHide} />
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar hide={hide} />
-          <Hero />
-        </div>
+
+      {/* Global Fixed Background Video playing on the entire page */}
+      <BackgroundVideo />
+
+      {/* Page Content */}
+      <div className="relative z-10">
+        <Navbar hide={hide} />
+        <Hero />
         <About />
         <Experience />
+        <Education />
         <Tech />
         <Works />
-        <Feedbacks />
 
         {/* Contact */}
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
-        </div>
+        <Contact />
         <Footer />
       </div>
     </BrowserRouter>
