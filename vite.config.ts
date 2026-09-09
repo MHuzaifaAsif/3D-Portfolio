@@ -16,5 +16,20 @@ export default defineConfig(({ mode }) => {
       tailwindcss(),
       react(),
     ],
+    build: {
+      chunkSizeWarningLimit: 1600,
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes("node_modules/three") || id.includes("node_modules/@react-three")) {
+              return "three-vendor";
+            }
+            if (id.includes("node_modules/framer-motion")) {
+              return "framer-motion";
+            }
+          },
+        },
+      },
+    },
   };
 });
